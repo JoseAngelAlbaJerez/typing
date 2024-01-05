@@ -128,7 +128,7 @@ function watchColorPicker(event) {
     userInput.style.backgroundColor = event.target.value;
     userInput.style.filter = "brightness(80%)"; 
     document.body.style.backgroundColor = event.target.value;
-    
+    colorPicker.style.border = event.target.value;
     // if success class exists then change it's value
     if (document.body.classList.contains("success")) {
    
