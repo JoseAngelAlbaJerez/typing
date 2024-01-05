@@ -1,0 +1,121 @@
+
+
+h1{
+    height: 70px; 
+    font-size: 1em;
+}
+span{
+    height: 70px; 
+    font-size: 1em;
+}
+textarea{
+    width: 50%;
+    min-height: 300px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    background-color: rgb(68, 48, 87);
+    resize: none;
+    font-size:  x-large !important;
+    font-weight: 300;
+
+    color: white;
+    padding: 14px 20px !important;
+}
+
+
+#typewriter{
+    font-size: x-large;
+
+}
+body{
+    background-color: rgb(104, 79, 128) ; 
+     color: white !important ; 
+}
+
+.success {
+    color: rgb(70, 67, 72);
+  }
+  .fail {
+    color: #933346;
+  }
+  #mistakes{
+    margin-left: auto;
+  }
+  .result {
+    margin-top: 40px;
+    display: none;
+  }
+  .result h3 {
+
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  div.swal2-overlay {
+    background-color: rgba(68, 48, 87, 0.5) !important;
+  }
+  
+  div.swal2-title {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21) !important;
+    margin-bottom: 28px !important;
+  }
+  
+  div.swal2 {
+    background-color: rgb(104, 79, 128) !important;
+  }
+button{
+    border: none;
+    background-color: rgb(68, 48, 87);
+    color: white;
+    padding: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 30px !important;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all .3s ease-in-out !important;
+    border-radius: 10px!important;
+    
+}
+button:hover {
+    
+    box-shadow:  10px 10px 10px rgba(255,255,255);
+}
+.default-area{
+  background-color: rgb(68, 48, 87);
+  transition: color 0.5s ease;
+}
+.default-area-green{
+  background-color: rgb(48, 87, 64) ;
+}
+.default-area-blue{
+  background-color: rgb(48, 63, 87);
+}
+.default-area-red{
+  background-color: rgb(87, 48, 51);
+}
+.default-area-yellow{
+  background-color: rgb(87, 85, 48);
+}
+
+.default-back{
+  background-color:  rgb(104, 79, 128);
+}
+.default-back-green{
+  background-color: rgb(79, 128, 94);
+  color: white;
+}
+
+.default-back-blue{
+  background-color: rgb(79, 103, 128);
+}
+
+.default-back-red{
+  background-color: rgb(128, 79, 92);
+}
+
+.default-back-yellow{
+  background-color: rgb(125, 128, 79);
+}
+#change-color, #start, #stop{
+  font-size: larger;
+}
