@@ -115,22 +115,21 @@ document.getElementById("stop").addEventListener("click", function() {
 
 const colorPicker = document.querySelector("#color-picker");
 
-colorPicker.addEventListener("input", updateFirst, false);
 colorPicker.addEventListener("change", watchColorPicker, false);
 
-function updateFirst(event) {
 
-  console.log("Color updated:", event.target.value);
-}
 
 function watchColorPicker(event) {
   document.querySelectorAll("button").forEach((button) => {
+
+    // styles change for each component of the page
     button.style.backgroundColor = event.target.value;
     button.style.filter = "brightness(80%)";
     userInput.style.backgroundColor = event.target.value;
     userInput.style.filter = "brightness(80%)"; 
     document.body.style.backgroundColor = event.target.value;
     
+    // if success class exists then change it's value
     if (document.body.classList.contains("success")) {
    
       document.querySelector(".success").style.color = event.target.value;
