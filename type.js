@@ -117,9 +117,11 @@ const colorPicker = document.querySelector("#color-picker");
 
 colorPicker.addEventListener("change", watchColorPicker, false);
 
-
+var labelElement = document.querySelector("label[for='colorPicker']");
+  
 
 function watchColorPicker(event) {
+  
   document.querySelectorAll("button").forEach((button) => {
 
     // styles change for each component of the page
@@ -129,6 +131,8 @@ function watchColorPicker(event) {
     userInput.style.filter = "brightness(80%)"; 
     document.body.style.backgroundColor = event.target.value;
     colorPicker.style.border = event.target.value;
+   
+    
     // if success class exists then change it's value
     if (document.body.classList.contains("success")) {
    
@@ -136,6 +140,7 @@ function watchColorPicker(event) {
       document.querySelector(".success").style.filter = "brightness(80%)";
     }
   });
+  labelElement.textContent = "Color: " + event.target.value;
 }
 
 
