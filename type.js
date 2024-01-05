@@ -16,7 +16,6 @@ function startCounter() {
     timer = setInterval(function() {
         document.getElementById('counter').textContent = "Time: "+currentCount + "s";
         
-
         if (currentCount === 0) {
             clearInterval(timer);
         } else {
@@ -75,6 +74,7 @@ userInput.addEventListener("input", () => {
     document.getElementById("stop").style.display = "none";
     userInput.disabled = true;
     let timeTaken = 1;
+    //Calcs the time taken to finish
     if (count != 0) {
         timeTaken = (100 - count) / 60;
 
@@ -147,6 +147,7 @@ window.onload = function() {
 const quoteApiUrl = "https://api.quotable.io/random?minLength=80&maxLength=100";
 
 
+//Quote API fetching
 const newquote = async () => {
     const response = await fetch(quoteApiUrl);
 
@@ -168,10 +169,13 @@ let typeWriter = function(){
     let i = 0;
     let speed = 50; 
     let fn = function(){
+      // if the quote is already written show the speed and aqurracy
         if(i < quotespace.innerText.length){
             quotespace.innerHTML = quotespace.innerText.substring(0, i) + '<span aria-hidden="true"></span>'+
             quotespace.innerText.substring(i, i+1);
             i++;
+
+            // Timer Space
             }else{
                 setTimeout(function(){
                     quotespace.className = 'fade';
